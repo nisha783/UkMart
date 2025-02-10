@@ -1,0 +1,147 @@
+.category-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.category-image:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.quantity__group {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.quantity__group input {
+    width: 70px;
+    text-align: center;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.remove-btn:hover {
+    color: #c82333;
+}
+
+[wire\:loading] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #212529;
+    color: white;
+}
+.nav-pills .nav-link {
+    color: #212529;
+}
+.order-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.stat-card {
+    border-left: 4px solid #212529;
+}
+
+.tracking-container {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.tracking-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.timeline-progress {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    right: 50px;
+    height: 2px;
+    background: #e0e0e0;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #28a745;
+    transition: width 0.3s ease;
+}
+
+.timeline-items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.timeline-item {
+    flex: 1;
+    text-align: center;
+    padding-top: 40px;
+    position: relative;
+}
+
+.timeline-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #e0e0e0;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.timeline-item.completed .timeline-icon {
+    border-color: #28a745;
+    background: #28a745;
+}
+
+.timeline-item.completed .timeline-icon i {
+    color: rgb(239, 239, 239) !important;
+}
+
+.timeline-item.current .timeline-icon {
+    border-color: #d24209;
+    background: #d24209;
+}
+
+.timeline-content {
+    padding-top: 10px;
+}
+
+.timeline-content h6 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.timeline-content small {
+    font-size: 12px;
+}
+
+.fas {
+    font-size: 16px;
+}
